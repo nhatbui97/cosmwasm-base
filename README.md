@@ -5,6 +5,7 @@
 ## Optimize code 
   1. Cài đặt docker: https://www.docker.com/products/docker-desktop/
   2. Chạy lệnh optimize: <br />
+  
 Linux: <br />
 ```
 docker run --rm -v "$(pwd)":/code \ 
@@ -21,5 +22,5 @@ docker run --rm -v ${PWD}:/code `
   cosmwasm/rust-optimizer:0.15.0
 ``` 
 ## Deploy (Instantiate) contract
-   1. Cài đặt module: npm install cosmwasm 
+   1. Cài đặt module: ```npm install cosmwasm ```
    2. Instantiate/Execute/Query contract: /scripts/script.js 
