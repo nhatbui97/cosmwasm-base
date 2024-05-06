@@ -26,5 +26,5 @@ docker run --rm -v ${PWD}:/code `
   2. Instantiate/Execute/Query contract: /scripts/script.js
 
 ## Lưu ý
-  1. Tuyệt đối ko push file .env lên git -> cần thêm vào file .gitignore
-  2. Sau khi khởi tạo contract theo template cần chỉnh file cargo.toml theo contract mẫu vì Oraichain chưa tương thích với bản cosmwasm 2.0.0
+  1. Tuyệt đối ko push file ```.env``` lên git -> cần thêm vào file ```.gitignore```
+  2. Sau khi khởi tạo contract theo template cần chỉnh file ```cargo.toml``` theo contract mẫu vì Oraichain chưa tương thích với bản cosmwasm 2.0.0
