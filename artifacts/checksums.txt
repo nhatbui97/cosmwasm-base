@@ -1,0 +1,1 @@
+db60d120074cdb9d369c4d490cd68a92d0631192c95aabab93addcc80d88d3fc  cosmwasm_base.wasm
