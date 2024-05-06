@@ -4,16 +4,21 @@
   ``` cargo generate --git https://github.com/CosmWasm/cw-template.git --name Tên_thư_mục ```
 # Optimize code 
   1. Cài đặt docker: https://www.docker.com/products/docker-desktop/
-  2 .Chạy lệnh optimize:
+  2. Chạy lệnh optimize:
     Linux:
-```docker run --rm -v "$(pwd)":/code \ 
+```
+docker run --rm -v "$(pwd)":/code \ 
   --mount type=volume,source="$(basename "$(pwd)")_cache",target=/target \ 
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \ 
-  cosmwasm/optimizer:0.15.0```
-    Window: ```docker run --rm -v ${PWD}:/code ` 
+  cosmwasm/optimizer:0.15.0
+```
+    Window: 
+```
+docker run --rm -v ${PWD}:/code ` 
   --mount type=volume,source="$(Get-Location | ForEach-Object { $_.Path.Substring($_.Path.LastIndexOf('\')+1) })_cache",target=/code/target ` 
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry `
-  cosmwasm/rust-optimizer:0.15.0``` 
+  cosmwasm/rust-optimizer:0.15.0
+``` 
 # Deploy(Instantiate) contract
    1. Cài đặt module: npm install cosmwasm 
    2 .Instantiate/Execute/Query contract: /scripts/script.js 
