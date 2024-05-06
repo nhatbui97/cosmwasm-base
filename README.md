@@ -1,7 +1,7 @@
 ## Cài đặt môi trường, code rust cơ bản
   https://github.com/Callum-A/cosmwasm-zero-to-hero (phần 01, 02, 03)
 ## Khởi tạo contract theo template 
-  ``` cargo generate --git https://github.com/CosmWasm/cw-template.git --name project_name ```
+  ``` cargo generate --git https://github.com/CosmWasm/cw-template.git --branch 1.0-minimal --name project_name ```
 ## Optimize code 
   1. Cài đặt docker: https://www.docker.com/products/docker-desktop/
   2. Chạy lệnh optimize: <br />
