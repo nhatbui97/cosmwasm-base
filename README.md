@@ -22,5 +22,9 @@ docker run --rm -v ${PWD}:/code `
   cosmwasm/rust-optimizer:0.15.0
 ``` 
 ## Deploy (Instantiate) contract
-   1. Cài đặt module: ```npm install cosmwasm ```
-   2. Instantiate/Execute/Query contract: /scripts/script.js 
+  1. Cài đặt module: ```npm install cosmwasm ```
+  2. Instantiate/Execute/Query contract: /scripts/script.js
+
+## Lưu ý
+  1. Tuyệt đối ko push file .env lên git -> cần thêm vào file .gitignore
+  2. Sau khi khởi tạo contract theo template cần chỉnh file cargo.toml theo contract mẫu vì Oraichain chưa tương thích với bản cosmwasm 2.0.0
