@@ -33,7 +33,7 @@ async function main() {
     //=====================================DEPLOY========================================
 
     // //wasm -> wasmCode
-    // const path = "./artifacts/cosmwasm-base.wasm"
+    // const path = "./artifacts/cosmwasm_base.wasm"
     // const wasmCode = new Uint8Array(fs.readFileSync(path))
 
     // //upload code on chain
