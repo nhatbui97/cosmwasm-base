@@ -16,8 +16,8 @@ docker run --rm -v "$(pwd)":/code \
 
 Window: <br />
 ```
-docker run --rm -v ${PWD}:/code ` 
-  --mount type=volume,source="$(Get-Location | ForEach-Object { $_.Path.Substring($_.Path.LastIndexOf('\')+1) })_cache",target=/code/target ` 
+sudo docker run --rm -v ${PWD}:/code `
+  --mount type=volume,source="$(Get-Location | ForEach-Object { $_.Path.Substring($_.Path.LastIndexOf('\')+1) })_cache",target=/code/target `
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry `
   cosmwasm/rust-optimizer:0.15.0
 ``` 
