@@ -8,15 +8,15 @@
   
 Linux: <br />
 ```
-docker run --rm -v "$(pwd)":/code \ 
-  --mount type=volume,source="$(basename "$(pwd)")_cache",target=/target \ 
-  --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \ 
+sudo docker run --rm -v "$(pwd)":/code \
+  --mount type=volume,source="$(basename "$(pwd)")_cache",target=/target \
+  --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
   cosmwasm/optimizer:0.15.0
 ```
 
 Window: <br />
 ```
-sudo docker run --rm -v ${PWD}:/code `
+docker run --rm -v ${PWD}:/code `
   --mount type=volume,source="$(Get-Location | ForEach-Object { $_.Path.Substring($_.Path.LastIndexOf('\')+1) })_cache",target=/code/target `
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry `
   cosmwasm/rust-optimizer:0.15.0
